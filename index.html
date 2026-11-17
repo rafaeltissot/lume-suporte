@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Suporte do Lume: Backup de Fotos</title>
+<meta name="description" content="Suporte do Lume: tutoriais em vídeo, passo a passo para conectar o seu computador e respostas para as dúvidas mais comuns.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="marca"><i aria-hidden="true">☀</i> Lume</div>
+
+  <h1><span>Suporte</span> do Lume</h1>
+  <p class="intro">Tutoriais em vídeo, passo a passo e respostas para as dúvidas mais comuns sobre o Lume: Backup de Fotos.</p>
+
+  <nav class="sumario" aria-label="Assuntos">
+    <a href="#comecar">Primeiros passos</a>
+    <a href="#tutoriais">Tutoriais em vídeo</a>
+    <a href="#perguntas">Perguntas frequentes</a>
+    <a href="#contato">Falar com a gente</a>
+  </nav>
+
+  <section id="comecar" aria-labelledby="t-comecar">
+    <h2 id="t-comecar">Primeiros <span>passos</span></h2>
+    <p>O Lume envia as fotos e vídeos do iPhone para o seu próprio computador ou NAS, pela rede de casa, sem nuvem de terceiros. Para começar:</p>
+    <ol class="passos">
+      <li><strong>Prepare o computador</strong> (uma única vez): ligue o compartilhamento de arquivos e escolha uma pasta para as fotos. Veja os vídeos logo abaixo.</li>
+      <li><strong>No iPhone</strong>, abra o Lume e toque em <strong>Adicionar conexão</strong>. O computador aparece na lista: toque nele.</li>
+      <li>Digite o <strong>usuário e a senha do computador</strong>, toque em <strong>Testar conexão</strong> e salve.</li>
+      <li>Escolha a pasta e comece o backup. Depois, ele pode rodar sozinho.</li>
+    </ol>
+    <p style="margin-top:14px">Sem computador à mão? No Lume, toque em <strong>Experimentar com a demonstração</strong> para conhecer o app com fotos e um vídeo de exemplo.</p>
+  </section>
+
+  <section id="tutoriais" aria-labelledby="t-tutoriais">
+    <h2 id="t-tutoriais">Tutoriais em <span>vídeo</span></h2>
+    <p>Escolha o seu computador. Cada vídeo mostra, em 5 passos, como deixá-lo pronto para o Lume.</p>
+    <nav class="abas" aria-label="Escolha o seu computador">
+      <a href="#mac">Mac</a>
+      <a href="#windows">Windows</a>
+      <a href="#nas">NAS</a>
+    </nav>
+  </section>
+
+  <section id="mac" aria-labelledby="t-mac">
+    <h2 id="t-mac">No <span>Mac</span></h2>
+    <video class="video" controls playsinline preload="metadata" poster="mac-poster.jpg"
+           aria-label="Vídeo: como preparar o Mac para o Lume, em 5 passos">
+      <source src="mac.mp4" type="video/mp4">
+      Seu navegador não toca este vídeo. Siga os passos escritos abaixo.
+    </video>
+    <ol class="passos">
+      <li>Abra os <strong>Ajustes do Sistema</strong> &gt; <strong>Geral</strong> &gt; <strong>Compartilhamento</strong>.</li>
+      <li>Ligue o <strong>Compartilhamento de Arquivos</strong> e clique no botão <strong>(i)</strong>.</li>
+      <li>Em <strong>Opções</strong>, ligue <strong>“Compartilhar arquivos e pastas usando SMB”</strong> e marque o seu usuário. Clique em <strong>OK</strong>.</li>
+      <li>Em <strong>Pastas compartilhadas</strong>, clique em <strong>+</strong> e escolha ou crie uma pasta, por exemplo <strong>“Fotos iPhone”</strong>.</li>
+      <li>No Lume, toque em <strong>Adicionar conexão</strong>, toque no seu computador na lista, digite o usuário e a senha do computador e toque em <strong>Testar conexão</strong>.</li>
+    </ol>
+  </section>
+
+  <section id="windows" aria-labelledby="t-windows">
+    <h2 id="t-windows">No <span>Windows</span></h2>
+    <video class="video" controls playsinline preload="metadata" poster="windows-poster.jpg"
+           aria-label="Vídeo: como preparar o computador com Windows para o Lume, em 5 passos">
+      <source src="windows.mp4" type="video/mp4">
+      Seu navegador não toca este vídeo. Siga os passos escritos abaixo.
+    </video>
+    <ol class="passos">
+      <li>Crie a pasta <strong>“Fotos iPhone”</strong> em um disco com espaço livre.</li>
+      <li>Clique com o botão direito na pasta &gt; <strong>Propriedades</strong> &gt; aba <strong>Compartilhamento</strong> &gt; <strong>Compartilhar</strong>. Escolha o seu usuário e clique em <strong>Compartilhar</strong>.</li>
+      <li>Abra <strong>Configurações</strong> &gt; <strong>Sistema</strong> &gt; <strong>Sobre</strong> e anote o <strong>Nome do dispositivo</strong>.</li>
+      <li>No Lume, em <strong>Endereço do computador</strong>, digite <code>smb://NOME-DO-PC/Fotos iPhone</code>. O Windows não aparece na busca automática.</li>
+      <li>Use o usuário do Windows e a senha dele. Se você entra com conta Microsoft, use o e-mail da conta e a senha dela (o PIN não funciona). Toque em <strong>Testar conexão</strong>.</li>
+    </ol>
+  </section>
+
+  <section id="nas" aria-labelledby="t-nas">
+    <h2 id="t-nas">No <span>NAS</span></h2>
+    <p>Ainda não há vídeo para NAS (Synology, QNAP e outros). O passo a passo é este:</p>
+    <ol class="passos">
+      <li>No painel do NAS, procure por <strong>Arquivos</strong> ou <strong>Serviços de arquivos</strong> e ligue o <strong>SMB</strong>.</li>
+      <li>Crie uma pasta, por exemplo <strong>“Fotos iPhone”</strong>, e dê ao seu usuário permissão de <strong>leitura e gravação</strong>.</li>
+      <li>Descubra o endereço: o nome do NAS (por exemplo, <code>meunas.local</code>) ou o IP dele, que o painel mostra (por exemplo, <code>192.168.1.20</code>).</li>
+      <li>No Lume, em <strong>Endereço do computador</strong>, digite <code>smb://meunas.local/Fotos iPhone</code>, coloque o usuário e a senha do NAS e toque em <strong>Testar conexão</strong>.</li>
+    </ol>
+  </section>
+
+  <aside class="antes" aria-labelledby="t-antes">
+    <h2 id="t-antes">Antes de tentar</h2>
+    <ul>
+      <li>O iPhone e o computador precisam estar no <strong>mesmo Wi‑Fi</strong>.</li>
+      <li>O computador precisa estar <strong>ligado e acordado</strong>.</li>
+      <li>Usuário e senha são os <strong>do computador</strong>, não os do Apple ID nem do iCloud.</li>
+      <li>Na primeira vez, o iPhone pede para encontrar dispositivos na rede local. Toque em <strong>Permitir</strong>.</li>
+    </ul>
+  </aside>
+
+  <section id="perguntas" aria-labelledby="t-perguntas" style="padding-top:48px">
+    <h2 id="t-perguntas">Perguntas <span>frequentes</span></h2>
+
+    <details>
+      <summary>O meu computador não aparece na lista</summary>
+      <ul>
+        <li>Confira se o computador está ligado, acordado e no mesmo Wi‑Fi do iPhone.</li>
+        <li>Confira se o compartilhamento de arquivos (SMB) está ligado, como nos vídeos acima.</li>
+        <li>Se você tocou em “Não permitir” na rede local, vá em <strong>Ajustes do iPhone &gt; Privacidade e Segurança &gt; Rede Local</strong> e ligue o Lume.</li>
+        <li>PCs com Windows e a maioria dos NAS não aparecem na lista. Digite o endereço, como <code>smb://NOME-DO-PC/Fotos iPhone</code>.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Aparece que o usuário ou a senha foi recusado</summary>
+      <p>Use o mesmo usuário e a mesma senha com que você entra no computador. Não são os do Apple ID nem os do iCloud. No Mac, confira também se o seu usuário está marcado em <strong>Compartilhamento de Arquivos &gt; Opções</strong>. No Windows com conta Microsoft, use o e-mail da conta e a senha dela, porque o PIN não funciona.</p>
+    </details>
+
+    <details>
+      <summary>Preciso de internet ou de uma conta?</summary>
+      <p>Não. O Lume não tem conta e não usa nuvem de terceiros. As fotos vão direto do iPhone para o seu computador pela rede Wi‑Fi de casa.</p>
+    </details>
+
+    <details>
+      <summary>O backup funciona fora de casa?</summary>
+      <p>O iPhone precisa alcançar o computador pela rede. Em geral, isso significa estar no mesmo Wi‑Fi. Quando você voltar para casa, o Lume continua de onde parou, sem repetir o que já foi enviado.</p>
+    </details>
+
+    <details>
+      <summary>Como funciona o backup automático?</summary>
+      <p>Você pode ligar a opção <strong>Backup automático quando possível</strong>. O Lume envia as fotos ao abrir o app e também em segundo plano, quando o iOS permite. O iOS decide o melhor momento, então o envio em segundo plano não tem hora marcada. Abrir o app e deixar o backup terminar é sempre o jeito mais rápido.</p>
+    </details>
+
+    <details>
+      <summary>Como as fotos ficam organizadas no computador?</summary>
+      <p>Automaticamente, em pastas por aparelho, ano e mês, usando a data original de cada foto. Nas Live Photos, o Lume envia apenas a foto.</p>
+    </details>
+
+    <details>
+      <summary>Posso apagar as fotos do iPhone depois do backup?</summary>
+      <p>Sim, e só as que já têm backup. O Lume mostra um relatório do que foi enviado e do que está pendente. Ao apagar, o iOS pede a sua confirmação, e as fotos vão para “Itens Apagados” da Fototeca, de onde você ainda pode recuperá-las por um tempo.</p>
+    </details>
+
+    <details>
+      <summary>Quero conhecer o app sem ter um servidor</summary>
+      <p>Na tela inicial do Lume, toque em <strong>Experimentar com a demonstração</strong>. Ela traz pastas, fotos e um vídeo de exemplo para você conhecer o backup, a navegação e o slideshow. Nada é enviado nem apagado do seu iPhone.</p>
+    </details>
+
+    <details>
+      <summary>Como funcionam o teste grátis e os planos?</summary>
+      <p>Você usa o Lume gratuitamente por 30 dias, com tudo liberado. Depois, escolhe entre a assinatura anual (renovação automática) e o acesso vitalício, em compra única. Os valores aparecem na tela de planos do app. Suas fotos e os arquivos já salvos no computador continuam seus, mesmo sem plano.</p>
+    </details>
+
+    <details>
+      <summary>Como cancelo a assinatura ou restauro uma compra?</summary>
+      <ul>
+        <li>Para cancelar: <strong>Ajustes do iPhone &gt; seu nome &gt; Assinaturas &gt; Lume</strong>.</li>
+        <li>Para restaurar uma compra, por exemplo em um iPhone novo: abra a tela de planos do Lume e toque em <strong>Restaurar compra</strong>.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Os vídeos do servidor não tocam ou demoram</summary>
+      <p>Mantenha o iPhone e o computador no mesmo Wi‑Fi e, se possível, perto do roteador. Vídeos grandes levam alguns segundos para começar. Se o problema continuar, escreva para a gente (veja abaixo) dizendo o modelo do iPhone e o formato do vídeo.</p>
+    </details>
+  </section>
+
+  <section id="contato" class="contato" aria-labelledby="t-contato">
+    <h2 id="t-contato">Ainda precisa de <span>ajuda</span>?</h2>
+    <p>Escreva para a gente. Conte o que aconteceu e o que você viu na tela. Se puder, diga o modelo do iPhone e se o computador é Mac, Windows ou NAS.</p>
+    <a class="botao" href="mailto:rafaeltissot@hotmail.com?subject=Suporte%20do%20Lume">Enviar e-mail</a>
+  </section>
+
+  <footer>
+    <p><a href="https://apps.apple.com/br/app/lume-backup-de-fotos/id6820493443">Lume: Backup de Fotos na App Store</a></p>
+    <p><a href="https://rafaeltissot.github.io/lume-privacidade/">Política de Privacidade</a></p>
+    <p>Esta página não usa cookies, análise de uso nem serviços de terceiros.</p>
+  </footer>
+</main>
+</body>
+</html>
