@@ -71,7 +71,8 @@
       <li>Crie a pasta <strong>“Fotos iPhone”</strong> em um disco com espaço livre.</li>
       <li>Clique com o botão direito na pasta &gt; <strong>Propriedades</strong> &gt; aba <strong>Compartilhamento</strong> &gt; <strong>Compartilhar</strong>. Escolha o seu usuário e clique em <strong>Compartilhar</strong>.</li>
       <li>Abra <strong>Configurações</strong> &gt; <strong>Sistema</strong> &gt; <strong>Sobre</strong> e anote o <strong>Nome do dispositivo</strong>.</li>
-      <li>No Lume, em <strong>Endereço do computador</strong>, digite <code>smb://NOME-DO-PC/Fotos iPhone</code>. O Windows não aparece na busca automática.</li>
+      <li>No Lume, em <strong>Endereço do computador</strong>, digite <code>smb://NOME-DO-PC.local/Fotos iPhone</code>, com <strong>.local</strong> depois do nome. O Windows não aparece na busca automática.</li>
+      <li>Se não conectar, use o número (IP) do PC: em <strong>Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades do hardware</strong>, anote o <strong>Endereço IPv4</strong> (por exemplo, 192.168.0.20) e digite <code>smb://192.168.0.20/Fotos iPhone</code>. É o jeito mais garantido.</li>
       <li>Use o usuário do Windows e a senha dele. Se você entra com conta Microsoft, use o e-mail da conta e a senha dela (o PIN não funciona). Toque em <strong>Testar conexão</strong>.</li>
     </ol>
   </section>
@@ -106,7 +107,17 @@
         <li>Confira se o computador está ligado, acordado e no mesmo Wi‑Fi do iPhone.</li>
         <li>Confira se o compartilhamento de arquivos (SMB) está ligado, como nos vídeos acima.</li>
         <li>Se você tocou em “Não permitir” na rede local, vá em <strong>Ajustes do iPhone &gt; Privacidade e Segurança &gt; Rede Local</strong> e ligue o Lume.</li>
-        <li>PCs com Windows e a maioria dos NAS não aparecem na lista. Digite o endereço, como <code>smb://NOME-DO-PC/Fotos iPhone</code>.</li>
+        <li>PCs com Windows e a maioria dos NAS não aparecem na lista. Digite o endereço, como <code>smb://NOME-DO-PC.local/Fotos iPhone</code> (com <strong>.local</strong> depois do nome) ou use o endereço IP do PC, como <code>smb://192.168.0.20/Fotos iPhone</code>.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>No Windows aparece “Não consegui falar com o computador”</summary>
+      <ul>
+        <li>Escreva o nome <strong>com .local</strong> no fim: <code>smb://NOME-DO-PC.local/Fotos iPhone</code>. O iPhone não encontra o nome simples do Windows.</li>
+        <li>Se ainda não conectar, use o <strong>endereço IP</strong> do PC (Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades do hardware &gt; Endereço IPv4) e digite <code>smb://192.168.0.20/Fotos iPhone</code>, trocando pelo número do seu PC.</li>
+        <li>Confira que o PC está no mesmo Wi‑Fi e que a rede dele está como <strong>Privada</strong> (Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades &gt; Perfil de rede: Privada).</li>
+        <li>No Windows, confirme que a pasta está compartilhada e que a <strong>descoberta de rede</strong> e o <strong>compartilhamento de arquivos</strong> estão ligados (Painel de Controle &gt; Central de Rede e Compartilhamento &gt; Alterar configurações de compartilhamento avançadas).</li>
       </ul>
     </details>
 
