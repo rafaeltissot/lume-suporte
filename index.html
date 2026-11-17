@@ -27,9 +27,9 @@
     <p>O Lume envia as fotos e vídeos do iPhone para o seu próprio computador ou NAS, pela rede de casa, sem nuvem de terceiros. Para começar:</p>
     <ol class="passos">
       <li><strong>Prepare o computador</strong> (uma única vez): ligue o compartilhamento de arquivos e escolha uma pasta para as fotos. Veja os vídeos logo abaixo.</li>
-      <li><strong>No iPhone</strong>, abra o Lume e toque em <strong>Adicionar conexão</strong>. O computador aparece na lista: toque nele.</li>
-      <li>Digite o <strong>usuário e a senha do computador</strong>, toque em <strong>Testar conexão</strong> e salve.</li>
-      <li>Escolha a pasta e comece o backup. Depois, ele pode rodar sozinho.</li>
+      <li><strong>No iPhone</strong>, abra o Lume e toque em <strong>Adicionar conexão</strong>. O computador aparece na lista: toque nele e em <strong>Continuar</strong>.</li>
+      <li>Digite o <strong>usuário e a senha do computador</strong> e toque em <strong>Conectar</strong>. O Lume confere a conexão e mostra as pastas compartilhadas.</li>
+      <li>Toque na pasta onde as fotos vão ficar e em <strong>Salvar</strong>. Depois, comece o backup. Ele também pode rodar sozinho.</li>
     </ol>
     <p style="margin-top:14px">Sem computador à mão? No Lume, toque em <strong>Experimentar com a demonstração</strong> para conhecer o app com fotos e um vídeo de exemplo.</p>
   </section>
@@ -37,6 +37,7 @@
   <section id="tutoriais" aria-labelledby="t-tutoriais">
     <h2 id="t-tutoriais">Tutoriais em <span>vídeo</span></h2>
     <p>Escolha o seu computador. Cada vídeo mostra, em 5 passos, como deixá-lo pronto para o Lume.</p>
+    <p><small>Os vídeos foram gravados com a tela de conexão anterior do app. Os passos no computador são os mesmos, e o passo a passo escrito abaixo já segue a tela atual.</small></p>
     <nav class="abas" aria-label="Escolha o seu computador">
       <a href="#mac">Mac</a>
       <a href="#windows">Windows</a>
@@ -56,7 +57,7 @@
       <li>Ligue o <strong>Compartilhamento de Arquivos</strong> e clique no botão <strong>(i)</strong>.</li>
       <li>Em <strong>Opções</strong>, ligue <strong>“Compartilhar arquivos e pastas usando SMB”</strong> e marque o seu usuário. Clique em <strong>OK</strong>.</li>
       <li>Em <strong>Pastas compartilhadas</strong>, clique em <strong>+</strong> e escolha ou crie uma pasta, por exemplo <strong>“Fotos iPhone”</strong>.</li>
-      <li>No Lume, toque em <strong>Adicionar conexão</strong>, toque no seu computador na lista, digite o usuário e a senha do computador e toque em <strong>Testar conexão</strong>.</li>
+      <li>No Lume, toque em <strong>Adicionar conexão</strong>, toque no seu computador na lista e em <strong>Continuar</strong>, digite o usuário e a senha do computador e toque em <strong>Conectar</strong>. Depois escolha a pasta e toque em <strong>Salvar</strong>.</li>
     </ol>
   </section>
 
@@ -71,9 +72,9 @@
       <li>Crie a pasta <strong>“Fotos iPhone”</strong> em um disco com espaço livre.</li>
       <li>Clique com o botão direito na pasta &gt; <strong>Propriedades</strong> &gt; aba <strong>Compartilhamento</strong> &gt; <strong>Compartilhar</strong>. Escolha o seu usuário e clique em <strong>Compartilhar</strong>.</li>
       <li>Abra <strong>Configurações</strong> &gt; <strong>Sistema</strong> &gt; <strong>Sobre</strong> e anote o <strong>Nome do dispositivo</strong>.</li>
-      <li>No Lume, em <strong>Endereço do computador</strong>, digite <code>smb://NOME-DO-PC.local/Fotos iPhone</code>, com <strong>.local</strong> depois do nome. O Windows não aparece na busca automática.</li>
-      <li>Se não conectar, use o número (IP) do PC: em <strong>Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades do hardware</strong>, anote o <strong>Endereço IPv4</strong> (por exemplo, 192.168.0.20) e digite <code>smb://192.168.0.20/Fotos iPhone</code>. É o jeito mais garantido.</li>
-      <li>Use o usuário do Windows e a senha dele. Se você entra com conta Microsoft, use o e-mail da conta e a senha dela (o PIN não funciona). Toque em <strong>Testar conexão</strong>.</li>
+      <li>No Lume, toque em <strong>Adicionar conexão</strong> e em <strong>Meu computador não aparece</strong>. Digite <code>NOME-DO-PC.local</code>, com <strong>.local</strong> depois do nome, e toque em <strong>Continuar</strong>. O Windows não aparece na busca automática.</li>
+      <li>Se não conectar, use o número (IP) do PC: em <strong>Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades do hardware</strong>, anote o <strong>Endereço IPv4</strong> (por exemplo, 192.168.0.20) e digite só o número, por exemplo <code>192.168.0.20</code>. É o jeito mais garantido.</li>
+      <li>Use o usuário do Windows e a senha dele. Se você entra com conta Microsoft, use o e-mail da conta e a senha dela (o PIN não funciona). Toque em <strong>Conectar</strong> e escolha a pasta <strong>Fotos iPhone</strong>.</li>
     </ol>
   </section>
 
@@ -84,7 +85,7 @@
       <li>No painel do NAS, procure por <strong>Arquivos</strong> ou <strong>Serviços de arquivos</strong> e ligue o <strong>SMB</strong>.</li>
       <li>Crie uma pasta, por exemplo <strong>“Fotos iPhone”</strong>, e dê ao seu usuário permissão de <strong>leitura e gravação</strong>.</li>
       <li>Descubra o endereço: o nome do NAS (por exemplo, <code>meunas.local</code>) ou o IP dele, que o painel mostra (por exemplo, <code>192.168.1.20</code>).</li>
-      <li>No Lume, em <strong>Endereço do computador</strong>, digite <code>smb://meunas.local/Fotos iPhone</code>, coloque o usuário e a senha do NAS e toque em <strong>Testar conexão</strong>.</li>
+      <li>No Lume, toque em <strong>Adicionar conexão</strong> e em <strong>Meu computador não aparece</strong>. Digite <code>meunas.local</code> (ou o IP), coloque o usuário e a senha do NAS, toque em <strong>Conectar</strong> e escolha a pasta.</li>
     </ol>
   </section>
 
@@ -107,15 +108,15 @@
         <li>Confira se o computador está ligado, acordado e no mesmo Wi‑Fi do iPhone.</li>
         <li>Confira se o compartilhamento de arquivos (SMB) está ligado, como nos vídeos acima.</li>
         <li>Se você tocou em “Não permitir” na rede local, vá em <strong>Ajustes do iPhone &gt; Privacidade e Segurança &gt; Rede Local</strong> e ligue o Lume.</li>
-        <li>PCs com Windows e a maioria dos NAS não aparecem na lista. Digite o endereço, como <code>smb://NOME-DO-PC.local/Fotos iPhone</code> (com <strong>.local</strong> depois do nome) ou use o endereço IP do PC, como <code>smb://192.168.0.20/Fotos iPhone</code>.</li>
+        <li>PCs com Windows e a maioria dos NAS não aparecem na lista. Toque em <strong>Meu computador não aparece</strong> e digite o nome com <strong>.local</strong> no fim (<code>NOME-DO-PC.local</code>) ou o endereço IP do PC, como <code>192.168.0.20</code>.</li>
       </ul>
     </details>
 
     <details>
       <summary>No Windows aparece “Não consegui falar com o computador”</summary>
       <ul>
-        <li>Escreva o nome <strong>com .local</strong> no fim: <code>smb://NOME-DO-PC.local/Fotos iPhone</code>. O iPhone não encontra o nome simples do Windows.</li>
-        <li>Se ainda não conectar, use o <strong>endereço IP</strong> do PC (Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades do hardware &gt; Endereço IPv4) e digite <code>smb://192.168.0.20/Fotos iPhone</code>, trocando pelo número do seu PC.</li>
+        <li>Escreva o nome <strong>com .local</strong> no fim: <code>NOME-DO-PC.local</code>. O iPhone não encontra o nome simples do Windows sozinho.</li>
+        <li>Se ainda não conectar, use o <strong>endereço IP</strong> do PC (Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades do hardware &gt; Endereço IPv4) e digite só o número, por exemplo <code>192.168.0.20</code>, trocando pelo número do seu PC.</li>
         <li>Confira que o PC está no mesmo Wi‑Fi e que a rede dele está como <strong>Privada</strong> (Configurações &gt; Rede e Internet &gt; Wi‑Fi &gt; Propriedades &gt; Perfil de rede: Privada).</li>
         <li>No Windows, confirme que a pasta está compartilhada e que a <strong>descoberta de rede</strong> e o <strong>compartilhamento de arquivos</strong> estão ligados (Painel de Controle &gt; Central de Rede e Compartilhamento &gt; Alterar configurações de compartilhamento avançadas).</li>
       </ul>
